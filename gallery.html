@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="Quake, gallery, menu">
+	<meta name="description" content="See the offer and a lot of images ">
+    <title>gallery</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/logo.png"/>
+    <link rel="stylesheet" type="text/css" href="materialize-css/dist/css/materialize.min.css"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header >
+	<nav class="nav-wrapper" id="header">
+		<a href="index.html" class="brand-logo">&nbsp;Quake</a>
+		<a href="" class="sidenav-trigger" data-target="mobile-menu">
+			<i class="material-icons">menu</i>
+		</a>
+		<ul class="right hide-on-med-and-down">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<ul class="sidenav grey lighten-2" id="mobile-menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<div class="hide-on-small-only">
+		<div class="carousel">
+			<a class="carousel-item" href="#one!"><img src="images/image5.jpg" alt="carousel image"/></a>
+			<a class="carousel-item" href="#two!"><img src="images/image6.jpg" alt="carousel image"/></a>
+			<a class="carousel-item" href="#three!"><img src="images/image7.jpg" alt="carousel image"/></a>
+			<a class="carousel-item" href="#four!"><img src="images/image8.jpg" alt="carousel image"/></a>
+			<a class="carousel-item" href="#five!"><img src="images/image9.jpg" alt="carousel image"/></a>
+		</div>	
+	</div>
+
+	<h2 class="orange lighten-5 black-text center" id="title">Menu</h2>
+	<div class="container center">
+		
+		<div class="row" id="menu">
+			<div class="col s12 m6 l4 xl6">
+				<h4>Asian food </h4>
+				<img src="images/menu1.jpeg" class="responsive-img" alt="Asian food menu"/>
+			</div>
+			<div class="col s12 m6 l4 xl6">
+				<h4>Mexican food </h4>
+				<img src="images/menu2.jpg" class="responsive-img" alt="Mexican food menu"/>
+			</div>
+			<div class="col s12 l4 xl6">
+				<h4>Italian food</h4>
+				<img src="images/menu3.jpg" class="responsive-img" alt="Italian food menu"/>
+			</div>
+			<div class="col s12 m6">
+				<h4>Inidan food </h4>
+				<img src="images/menu4.jpg" class="responsive-img" alt="Indian food menu"/>
+			</div>
+			<div class="col s12 m6 xl12">
+				<h4>Serbian food</h4>
+				<img src="images/menu5.jpg" class="responsive-img" alt="Serbian food menu"/>
+			</div>
+		</div>
+	</div>
+</main>
+
+<footer id="foot">
+	<div class="footer-copyright center">
+		<div class="row">
+			<p>&copy;Copyright Quake</p>
+			<a class="modal-trigger white-text" href="#modal1">More information about delivery</a>
+			 <div id="modal1" class="modal">
+				<div class="modal-content">
+				  <h4 class="black-text">Delivery</h4>
+				  <p class="black-text">Minimum value for free delivery is 800rsd.</p>
+				</div>
+				<div class="modal-footer">
+				  <a href="#!" class="modal-close red btn-flat">Ok</a>
+				</div>
+			 </div>
+		</div>
+	</div>
+</footer>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<script src="materialize-css/dist/js/materialize.min.js"></script>
+
+<script src="materialize-css/extras/noUiSlider/nouislider.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$(".sidenav").sidenav();
+		$('.carousel').carousel();
+		$('.materialboxed').materialbox();
+		$('.modal').modal();
+	});
+</script>
+</body>
+</html>

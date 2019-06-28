@@ -1,0 +1,56 @@
+body{
+	background-color: #400000;
+	font-family: 'Nunito', sans-serif;
+}
+
+p, h4, h3, h2, h1{
+	color: white;
+}
+
+p{
+	font-size: 18px;
+}
+
+#header{
+	background-image: linear-gradient(#400000, #c04000);
+}
+
+.carousel-inner img{
+	max-height: 650px;
+	width: 100%;
+}
+
+.img-responsive{
+	margin: 0 auto;
+}
+
+#first, #third, #logo{
+	padding-bottom: 5%;
+	padding-top: 1%;
+}
+
+#third, #menus, #menu{
+	padding-top: 5%;
+}
+
+#second {
+	background-image: url(../images/image3.jpg);
+	padding-bottom: 10%;
+	padding-top: 10%;
+}
+
+#form{
+	border-radius: 5px;
+}
+
+#main{
+	padding-top: 2%;
+}
+
+#title{
+	margin-top: 5%;
+}
+
+#foot{
+	border-top: 1px solid white;
+}
